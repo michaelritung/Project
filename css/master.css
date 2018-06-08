@@ -1,0 +1,306 @@
+body{margin: 0; font-family: 'Varela Round', sans-serif;}
+
+.main{
+  overflow: hidden;
+}
+
+.button{
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #a7a7a8;
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.home__mainBanner{
+  width: 100%;
+  background: #ED6E21 url("../img/mainBg.png") no-repeat center;
+  height: 280px;
+}
+
+.home__mainBanner__text{
+  overflow: hidden;
+  text-align: center;
+  font-size: 4vw;
+  color: #1A0C2D;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.home__event__topImage{
+  margin: 20px 40px 0 0;
+  width: 205px;
+  float: left;
+}
+
+.home__event__topImage img{
+  width: 100%;
+}
+
+.home__event__share{
+  margin: 20px 0 0 0;
+}
+
+.button--Share{
+  background: #085394;
+  border-color: #085394;
+  color: white;
+  float: right;
+  padding: 5px 20px;
+}
+
+.button--Share:hover{
+  background: #448dcc;
+  border-color: #448dcc;
+  color: white;
+  float: right;
+}
+
+.home__event__description{
+  margin: 20px 0 0 0;
+  min-width: 280px;
+}
+
+.home__event__description h1{
+  font-size: 3em;
+  margin: 0 0 10px 0;
+  color: #cf2925;
+}
+
+.home__event__description h2{
+  font-size: 1.8em;
+  margin: 0 0 30px 0;
+}
+
+.home__event__description p{
+  font-size: 19px;
+}
+
+.home__product{
+  margin: 20px 0;
+  width: 100%;
+}
+
+.product__container{
+  margin-bottom: 30px;
+}
+
+.home__product__tab-container {
+    overflow: hidden;
+    display:flex;
+    position: relative;
+    top:1px;
+}
+
+.home__product__tab-container button {
+    background-color: #dddddd;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    transition: 0.3s;
+    font-size: 16px;
+    border: 1px solid #717171;
+}
+
+.tab__wrapper{
+  margin-left: 25px;
+}
+
+.home__product__tab-container button:hover {
+    background-color: #ddd;
+}
+
+.home__product__tab-container button.active {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.home__product__content {
+  overflow: hidden;
+	background-color: #eeeeee;
+  border: 1px solid #717171;
+}
+
+.product__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  overflow: hidden;
+  margin: 35px auto 15px;
+}
+
+.product__box{
+  width: 25%;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+}
+
+.product_core{
+  margin:auto;
+  background: white;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.product_header{
+  position: relative;
+}
+
+.product__image img{
+  width: 100%;
+}
+
+.product__label__group{
+  top: -1px;
+  left: -1px;
+  position: absolute;
+  display: flex;
+  width: calc(100% + 2px);
+}
+
+.product_label{
+  color: #fff;
+  padding: 5px 10px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  background: #cf2a27;
+}
+
+.product_body{
+  padding: 15px;
+}
+
+.product_body a{
+  text-decoration: none;
+  color: black;
+}
+
+.product_body a:hover{
+  text-decoration: underline;
+}
+
+.product__price{
+  color: #FF9B12;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+}
+
+.button--Buy{
+  background: #FF9900;
+  color: #333333;
+  border-color: #666666;
+  padding: 5px 15px;
+}
+
+.product--Disabled span, a{
+  color: #999A9A;
+}
+
+.product--Disabled button{
+  font-size: 17px;
+  padding: 6px 15px;
+  cursor: default;
+}
+
+@media screen and (min-width: 1366px) {
+  .home__mainBanner__text{
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    width: 92%;
+    margin: 0 4%;
+  }
+
+  .home__mainBanner__text{
+    font-size: 47px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home__mainBanner__text{
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .home__mainBanner__text h1{
+    margin-top: 75px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .product_core{
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tab__wrapper{
+    margin:auto;
+  }
+
+  .product__container{
+      width: 100%;
+      margin: 0 0 30px 0;
+  }
+
+  .product__wrapper{
+    width: 90%;
+    margin: 26px auto 27px;
+  }
+
+  .product__box{
+    margin-bottom: -1px;
+  }
+
+  .button--Share{
+    float: left;
+    padding: 10px 20px;
+    margin: 0 65px 0 0;
+  }
+
+  .home__event__topImage{
+    margin: 20px 250px 10px 0;
+  }
+
+  .home__event__description{
+    overflow: hidden;
+  }
+
+  .home__event__description h1{
+    font-size: 2em;
+    margin: 20px 0 10px 0;
+  }
+
+  .home__event__description h2{
+    font-size: 1.5em;
+    margin: 0 0 20px 0;
+  }
+
+  .home__event__description p{
+    font-size: 16px;
+  }
+
+  .product__box{
+    width: 50%;
+  }
+}
